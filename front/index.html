@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website </title>
+   <link rel="stylesheet" href="index.css"> 
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="bg-light py-3 shadow-sm">
+  <div class="container"><!-- d-flex justify-content-between align-items-center  -->
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 class="logo text-primary">DA Career</h1>
+      <!-- <button id="theme-toggle" class="btn btn-outline-secondary">Toggle Dark Mode</button> -->
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="jobsDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All Jobs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="jobsDropdown1">
+              <li><a class="dropdown-item" href="#">Internship</a></li>
+              <li><a class="dropdown-item" href="#">Software Developer</a></li>
+              <li><a class="dropdown-item" href="#">Data Analyst</a></li>
+              <li><a class="dropdown-item" href="#">Web Developer</a></li>
+              <li><a class="dropdown-item" href="#">Sales & Marketing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="jobsDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Location
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="jobsDropdown2">
+              <li><a class="dropdown-item" href="#">Work From Home</a></li>
+              <li><a class="dropdown-item" href="#">Pune</a></li>
+              <li><a class="dropdown-item" href="#">Delhi</a></li>
+              <li><a class="dropdown-item" href="#">Noida</a></li>
+              <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<!-- <div class="video-section">
+  <video autoplay loop muted playsinline class="bg-video">
+    <source src="video.mp4" type="video/mp4">
+    <!-- Fallback content if video format isn't supported -->
+    <!-- Your browser does not support the video tag.
+  </video> --> -->
+ <div class="container my-5"> 
+  <!-- <div class="content-overlay"> -->
+  <h2><b>DA Career</b></h2>
+  <p>Discover job opportunities in the technology industry with My Website.</p>
+</div>
+<div>
+  <h3> Search & Apply</h3>
+  <form>
+    <label for="job-role" class="sr-only">Enter Job Role</label>
+  <input type="text" id="job-role" placeholder="Enter Job Role " class="search-box">
+  <button type="submit" class="search-icon" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass" style="color: #28416c;">
+      </i>
+      </button>
+      </form>
+</div>
+<div class="button-container">
+  <button type="button" class="internship-btn">
+    Internship
+  </button>
+  <button type="button" class="software-developer-btn">
+    Software Developer
+  </button>
+  <button type="button" class="filter-btn">
+    Filter Job
+  </button>
+</div>
+
+<div class="job-listing">
+  <div class="job">
+      <h3>Quest Global is hiring Trainee Engineer</h3>
+      <p><strong>Batch:</strong> Freshers</p>
+      <p><strong>Location:</strong> Hyderabad, India</p>
+      <p><strong>Qualification:</strong> Graduate</p>
+      <p><strong>Salary:</strong> 4 - 5 LPA (Expected)</p>
+  </div>
+  
+  <div class="job">
+      <h3>Persistent is hiring Full Stack Developer</h3>
+      <p><strong>Batch:</strong> Freshers</p>
+      <p><strong>Location:</strong> Pune, India</p>
+      <p><strong>Qualification:</strong> Graduate</p>
+      <p><strong>Salary:</strong> 5 - 9 LPA (Expected)</p>
+  </div>
+
+  <div class="job">
+    <h3>Quest Global is hiring Trainee Engineer</h3>
+    <p><strong>Batch:</strong> Freshers</p>
+    <p><strong>Location:</strong> Hyderabad, India</p>
+    <p><strong>Qualification:</strong> Graduate</p>
+    <p><strong>Salary:</strong> 4 - 5 LPA (Expected)</p>
+</div>
+
+<div class="job">
+  <h3>Quest Global is hiring Trainee Engineer</h3>
+  <p><strong>Batch:</strong> Freshers</p>
+  <p><strong>Location:</strong> Hyderabad, India</p>
+  <p><strong>Qualification:</strong> Graduate</p>
+  <p><strong>Salary:</strong> 4 - 5 LPA (Expected)</p>
+</div>
+
+<div class="job">
+  <h3>Quest Global is hiring Trainee Engineer</h3>
+  <p><strong>Batch:</strong> Freshers</p>
+  <p><strong>Location:</strong> Hyderabad, India</p>
+  <p><strong>Qualification:</strong> Graduate</p>
+  <p><strong>Salary:</strong> 4 - 5 LPA (Expected)</p>
+</div>
+
+<div class="job">
+  <h3>Quest Global is hiring Trainee Engineer</h3>
+  <p><strong>Batch:</strong> Freshers</p>
+  <p><strong>Location:</strong> Hyderabad, India</p>
+  <p><strong>Qualification:</strong> Graduate</p>
+  <p><strong>Salary:</strong> 4 - 5 LPA (Expected)</p>
+</div>
+</div>
+<div class="position-fixed bottom-0 start-0 m-3">
+  <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="btn btn-success btn-lg rounded-circle">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://t.me/yourtelegramusername" target="_blank" class="btn btn-success btn-lg rounded-circle">
+    <i class="fab fa-telegram"></i>
+  </a>
+</div>
+<div class="community">
+  <h2> <b>Stay Connected:</b></h2>
+  <h3> Join Our Community</h3>
+  <div class="socials-links">
+    <a href="#"><i class="fab fa-telegram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<!-- feedback form -->
+
+<div class="container mt-5">
+  <div class="row">
+    <!-- Contact Info Section -->
+    <div class="col-md-4 contact-info">
+      <h2>Phone</h2>
+      <p>+91 8445288326</p>
+      <h2>Email</h2>
+      <p>thejobcompany@gmail.com</p>
+      <p>query@thejobcompany.in</p>
+    </div>
+
+    <!-- Feedback Form Section -->
+    <div class="col-md-8 feedback-form">
+      <h2>Send us Feedback</h2>
+      <p>For us, user feedback is top-most important. Feel free to suggest changes that will make us better in future.</p>
+
+      <form action="#" method="post">
+        <div class="mb-3">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <textarea id="message" name="message" class="form-control" placeholder="Write message here..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Now</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer Section -->
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-row">
+          <div class="footer-col">
+              <h4>Info</h4>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Disclaimer</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Locations</h4>
+              <ul>
+                  <li><a href="">Work From Home</a></li>
+                  <li><a href="">Pune</a></li>
+                  <li><a href="">Delhi</a></li>
+                  <li><a href="">Noida</a></li>
+                  <li><a href="">Bengaluru</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>All Jobs</h4>
+              <ul>
+                  <li><a href="">Internship</a></li>
+                  <li><a href="">Software Developer</a></li>
+                  <li><a href="">Data Analyst</a></li>
+                  <li><a href="">Web Developer</a></li>
+                  <li><a href="">Sales & Marketing</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Required JS for Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="index.js"></script> 
+</body>
+</html>

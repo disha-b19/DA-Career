@@ -1,0 +1,527 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+ /* background-color: var(--bg-color);
+ color:var(--text-color); */
+ background-color: black;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  perspective: 1000px;;
+}
+
+/* Header Styles */
+header {
+  background-color: black;
+  color:var(--header-text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+}
+.main-header {
+  background-color: rgb(3, 3, 3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header:hover {
+  transform: translateZ(20px) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+/* .nav .nav-link, .footer-col ul li a {
+  color: var(--text-color);
+} */
+
+.nav .nav-link {
+  color: black;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: transform 0.3s ease, color 0.3s;
+  transform-style: preserve-3d;
+}
+
+.nav .nav-link:hover {
+  color: #007bff;
+  transform: translateZ(10px) rotateY(10deg);
+}
+
+.nav .dropdown-menu {
+  background-color: #f8f9fa;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav .dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Main Content Styles */
+video{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  z-index:-1;
+  position:fixed;
+}
+h2,h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #007bff;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+h2:hover, h3:hover {
+  transform: rotateX(10deg) rotateY(10deg) translateZ(15px);
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* Video Background Section
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; 
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 50px 20px; 
+}
+
+/* Optional Overlay */
+/* .content-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+/* Style for Search Box and Button */
+/* .search-container {
+  margin-top: 20px;
+} */ 
+
+.search-box {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #d3d9e2; 
+  border-radius: 5px 0 0 5px; 
+  width: 700px;
+  height:50pxpx;
+  outline: none;
+  transition: border 0.3s ease;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box:focus {
+  border-color: #567ba9;
+}
+
+
+.search-icon {
+  background-color: #e3e6ec; 
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:50px;
+  width:50px;
+}
+
+.search-icon i {
+  color: white;
+  font-size: 18px;
+}
+
+
+.search-icon:hover {
+  background-color: rgb(124, 185, 243); 
+  
+}
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 15px; 
+  margin-top:20px; 
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.button-container button:hover {
+  transform: translateZ(10px);
+}
+
+.internship-btn {
+  background-color:  #2196F3;; 
+  color: white; 
+  border-radius:15px;
+  height:45px;
+  border-color: #007bff;
+ 
+}
+
+.internship-btn:hover {
+  background-color: rgb(8, 56, 90); 
+}
+
+
+.software-developer-btn {
+  background-color: #2196F3; 
+  color: white;
+  border-radius:15px;
+  height:45px;
+  border-color: #007bff;
+ 
+  
+}
+
+.software-developer-btn:hover {
+  background-color: rgb(8,56,90); 
+}
+
+
+.filter-btn {
+  background-color:#2196F3;
+  color: white;
+  border-radius:15px;
+  height:45px;
+  border-color: #007bff;
+  
+}
+
+.filter-btn:hover {
+  background-color:rgb(8,56,90);
+}
+.job-listing {
+  padding: 50px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.job {
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover {
+  transform: translateZ(30px) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.job h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.job p {
+  margin: 5px 0;
+}
+.position-fixed {
+  position: fixed;
+  bottom: 20px; 
+  left: 20px;   
+  z-index: 1000; 
+}
+
+.btn {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 60px;   /* Width of the buttons */
+  height: 60px;  /* Height of the buttons */
+  margin: 10px;  /* Space between buttons */
+  color: white;   /* Text color */
+  font-size: 24px; /* Icon size */
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.btn:hover {
+  background-color: #25D366; /* WhatsApp color on hover */
+  transform: scale(1.1);
+}
+.btn-success {
+  background-color: #25d385; /* Default WhatsApp color */
+}
+
+.btn-success:last-child {
+  background-color: #0088cc; /* Default Telegram color */
+}
+
+.rounded-circle {
+  border-radius: 50%; /* Makes the buttons circular */
+}
+
+i {
+  font-size: 24px; /* Icon size */
+}
+
+.community {
+ 
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  
+}
+
+h2 {
+   
+  font-size: 1.5rem; 
+  margin-bottom: 10px; 
+}
+
+h3 {
+ 
+  color:rgb(119, 60, 187); 
+  font-size: 1.2rem; 
+  margin-bottom: 15px; 
+}
+
+.socials-links {
+  display: flex; /* Flexbox for horizontal alignment */
+  gap: 15px; /* Space between icons */
+  margin-bottom: 20px; /* Space below the social links */
+  justify-content: center; /* Center the social links */
+}
+
+.socials-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #0c5d13; /* Icon color */
+  font-size: 30px; /* Size of the icons */
+  transition: color 0.3s; /* Transition effect for hover */
+}
+
+.socials-links a:hover {
+  color: #0a9056; /* Darker color on hover */
+}
+
+.middle-link {
+  text-align: center; /* Center the link */
+  margin: 20px 0; /* Space above and below the link */
+}
+
+.middle-link a {
+  color: #2fc01c; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.middle-link a:hover {
+  color: #0e750f; /* Darker color on hover */
+}
+
+/* feedback form */
+/* Feedback Form Styles */
+.feedback-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feedback-form p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.feedback-form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.feedback-form button {
+  background-color: #263b6e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.feedback-form button:hover {
+  background-color: #1e315a;
+}
+
+.contact-info h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #282828;
+  padding: 2rem 0;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:1550px;
+  height:400px;
+  transform-style: preserve-3d;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 1rem;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  transition: transform 0.3s ease,color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  transform: translateZ(5px) rotateX(5deg) rotateY(5deg);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #b3b3b3;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  header .logo {
+    font-size: 24px;
+  }
+
+  .nav .nav-link {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  footer .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .col-md-6, footer .col-md-7, footer .col-md-8 {
+    margin-bottom: 20px;
+  }
+}
